@@ -13,26 +13,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/O-RA-CL-E/bot-discord-but/issues"
   },
   "homepage": "https://github.com/O-RA-CL-E/bot-discord-but#readme",
   "dependencies": {
-    "@discordjs/voice": "^0.19.0",
-    "@snazzah/davey": "^0.1.8",
     "discord.js": "^14.25.1",
-    "ffmpeg-static": "^5.3.0",
-    "fs": "^0.0.1-security",
-    "ical": "^0.8.0",
-    "ical-expander": "^3.1.0",
-    "node-fetch": "^2.7.0",
-    "node-ical": "^0.20.1",
-    "play-dl": "^1.9.7",
-    "rss-parser": "^3.13.0",
-    "ytdl-core": "^4.11.5"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.35.0",
-    "eslint": "^9.35.0"
+    "dotenv": "^17.2.3",
+    "ollama": "^0.6.3"
   }
 }
