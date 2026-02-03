@@ -40,8 +40,13 @@ module.exports = {
             history.push({ role: 'user', content: interaction.options.getString('question') });
 
             const response = await ollamaInstance.chat({
-                model: process.env.OLLAMA_MODEL || 'llama3',
+                model: 'phi3',
                 messages: history,
+                options: {
+                    num_predict: 128,
+                    temperature: 0.7,
+                },
+                keep_alive: "24h"
             });
 
             history.push({ role: 'assistant', content: response.message.content });
